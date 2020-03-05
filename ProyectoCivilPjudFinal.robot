@@ -40,7 +40,7 @@ TestFinal
 *** Keywords ***
 BuscadorDeCasos
     [Documentation]    Rescata variables desde Excel.
-    log    ${Contador}
+    Open Excel    ${PathExcel}
     Open Browser    ${Url}    chrome    #Apertura de explorador
     Sleep    10s    \    #Espera de 10 segundos
     Select Frame    name=body
