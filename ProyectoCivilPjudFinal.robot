@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation     Proyecto que busca automatizar consultas hacia Civil Pjud.
+...               Se necesitan las librerias instaladas para poder hacer funcionar el script.
 Library           SeleniumLibrary
 Library           ExcelLibrary
 Library           clipboard
