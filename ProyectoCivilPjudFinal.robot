@@ -117,6 +117,7 @@ ValidarTotalCasos
     Log    ${ContadorCasos}
 
 AperturaDeCasos
+    [Documentation]    Apertura de cada causa de manera individual
     Log    ${ContadorCasos}
     Log    ${RutCopiar}
     Log    ${ContadorCasos}
@@ -143,6 +144,7 @@ ContadorCasosInternosReset
     Set Test Variable    ${ContadorDeCasosInternos}    ${temp2}
 
 GuardadorEnExcel
+    [Documentation]    Generador de archivo Excel con fecha y hora respectiva
     Open Excel    resultado/Prototipo.xls
     Sleep    5s
     log    ${Contador}
@@ -162,6 +164,7 @@ GuardadorEnExcel
     Save Excel    resultado/${filename}
 
 ValidarRutExcelHaciaPjud
+    [Documentation]    Se valida que exista un caso valido para el rut mostrado.
     log    ${ContadorCasos}
     log    ${NombreCopiar}
     log    ${RutCopiar}
